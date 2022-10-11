@@ -171,38 +171,24 @@ main {
 
 @media (max-width: 600px) {
   main {
-    width: 90%;
-    height: 90%;
-    flex-direction: column;
-  }
-  html {
-    font-size: 40%;
+    width: 100rem;
+    height: 60rem;
   }
   .name {
-    font-size: 5rem;
+    position: relative;
+    font-size: 2rem;
+    word-spacing: 1px;
+  }
+  html {
+    font-size: 30%;
   }
   .btn--new {
-    top: 48%;
-    left: 15%;
+    top: 10%;
   }
   .btn--roll {
-    top: 48%;
-    left: 40%;
+    top: 75%;
   }
   .btn--hold {
-    top: 48%;
-    left: 85%;
-  }
-  .player--0 {
-    rotate: 180deg;
-  }
-  .score {
-    font-size: 4rem;
-    margin-top: 20rem;
-  }
-  .dice {
-    left: 65%;
-    top: 48%;
-    height: 5rem;
+    top: 80%;
   }
 }
