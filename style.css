@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -38,10 +32,11 @@ main {
 }
 
 .player {
+  display: flex;
+  flex-direction: column;
   flex: 50%;
   padding: 9rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   transition: all 0.75s;
 }
@@ -171,18 +166,15 @@ main {
 }
 
 @media (max-width: 600px) {
-  main {
-    width: 90%;
-    height: 30%;
-  }
-  .name {
-    position: relative;
-    font-size: 2rem;
-    word-spacing: 1px;
-  }
   html {
     font-size: 30%;
   }
+  .name {
+    position: relative;
+    font-size: 3rem;
+    word-spacing: 1px;
+  }
+
   .btn--new {
     top: 10%;
   }
@@ -194,7 +186,7 @@ main {
   }
   .dice {
     left: 50%;
-    top: 20%;
+    top: 50%;
     transform: translateX(-50%);
     height: 10rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
