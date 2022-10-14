@@ -127,6 +127,7 @@ main {
 
 .btn--new {
   top: 4rem;
+  box-shadow: none;
 }
 .btn--roll {
   top: 39.3rem;
@@ -166,6 +167,9 @@ main {
 }
 
 @media (max-width: 600px) {
+  main {
+    height: auto;
+  }
   html {
     font-size: 30%;
   }
